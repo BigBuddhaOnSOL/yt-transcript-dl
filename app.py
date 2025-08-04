@@ -2,6 +2,8 @@ from flask import Flask, request, render_template
 from youtube_transcript_api import YouTubeTranscriptApi
 from youtube_transcript_api.formatters import TextFormatter
 import os
+print("Module path:", youtube_transcript_api.__file__)
+print("Methods available:", dir(YouTubeTranscriptApi))
 
 app = Flask(__name__)
 
