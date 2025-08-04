@@ -1,3 +1,4 @@
-import youtube_transcript_api
-print("Module path:", youtube_transcript_api.__file__)
-print("Methods available:", dir(YouTubeTranscriptApi))
+from flask import Flask, request, render_template
+from youtube_transcript_api import YouTubeTranscriptApi  # ✅ Diese Zeile ist entscheidend
+from youtube_transcript_api.formatters import TextFormatter
+import os
